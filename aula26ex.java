@@ -8,6 +8,7 @@ public class aula26ex {
         int idade;
         double peso;
         String jogo;
+        int igual = 0;
 
         System.out.println("Nome: ");
         nome = leiaString.nextLine();
@@ -18,12 +19,40 @@ public class aula26ex {
         System.out.println("Jogo: ");
         jogo = leiaString.nextLine();
 
-        if(nome.equals("Diogo")){
+        if(nome.equals("Daniel")){
             System.out.println("Pessoa com nome igual!");
+            igual++;
         }else{
             System.out.println("Pessoa com nome diferente");
         }
+
+        if(idade==40){
+            System.out.println("Pessoa com a mesma idade!");
+            igual++;
+        }else{
+            System.out.println("Pessoa com idade diferente");
+        }
         
+        if(peso==80){
+            System.out.println("Pessoa com o mesmo peso!");
+            igual++;
+        }else{
+            System.out.println("Pessoa com peso diferente");
+        }
+
+
+        if(jogo.equals("sonic")){
+            System.out.println("Pessoa gosta do mesmo jogo!");
+            igual++;
+        }else{
+            System.out.println("Pessoa não gosta do mesmo jogo");
+        }
+
+        if(igual>=3){
+            System.out.println("Esta pessoa é bem parecida comigo");
+        }else{
+            System.out.println("Esta pessoa não é parecida comigo.");
+        }
 
 
     }
