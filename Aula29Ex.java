@@ -1,5 +1,7 @@
 public class Aula29Ex {
     public static void main(String[] args) {
+        int primo =0;
+
         for(int i = 1; i <= 100 ; i++){
             
             System.out.println(i);
@@ -14,7 +16,7 @@ public class Aula29Ex {
             }
                 if(i%3==0){
                     System.out.println(" e múltiplo de 3 ");
-                }else if(i%5==0){
+                }if(i%5==0){
                     System.out.print(" e múltiplo de 5 ");
                     System.out.println(", número múltiplos de 5 em ordem decrescente: ");
                     for(int j = i; j > 1; j--){
@@ -22,8 +24,20 @@ public class Aula29Ex {
                             System.out.print(j+" ");
                         }
                     }
-                System.out.println(" ");
                 }
+                System.out.println(" ");
+                
+                for(int k = 1; k <= i ; k++){
+                    if (i==1){
+                        System.out.println(" é Primo!!");
+                    }if(i%k==0){
+                        primo++;
+                    }
+                }if(primo == 2){
+                    System.out.println(" é Primo");
+                }
+                primo =0;
+            
         }
     }
 }

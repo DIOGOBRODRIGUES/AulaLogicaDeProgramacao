@@ -11,8 +11,11 @@ public class aula35ex2 {
         lado2 = ler.nextInt();
         for(int i = 0; i < lado1; i++){
             for(int j = 0; j < lado2; j++){
-                if(i==0 || i==lado1-1)
+                if(i==0 || i==lado1-1 || j==0 || j==lado2-1){
                 System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
             }
             System.out.println("");
         }

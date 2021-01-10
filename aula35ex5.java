@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class aula35ex5 {
     public static void main(String[] args) {
         int tamanhoMa;
+        int sinal = 1;
         int num;
         int dprincipal1 = 1;
         int dprincipal2 = 1;
@@ -17,7 +18,13 @@ public class aula35ex5 {
         tamanhoMa = ler.nextInt();
         for (int i = 0; i < tamanhoMa; i++){
             for(int j = 0; j <tamanhoMa; j++){
-                num = 1+ale.nextInt(9);
+                sinal = ale.nextInt(2);
+                if(sinal==1){
+                    sinal =1;
+                }else{
+                    sinal = -1;
+                }
+                num = ale.nextInt(10)*sinal;
                 System.out.print(num+" ");
                 if(i == j){
                     dprincipal1 = dprincipal1*num;
